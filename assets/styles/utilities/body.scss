@@ -1,0 +1,24 @@
+html {
+    scrollbar-gutter: stable;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: -webkit-fill-available;
+    height: auto;
+    background-color: #fff;
+
+    &.overflow {
+        overflow: hidden;
+        height: 100%;
+    }
+}
+
+body.scroll-lock {
+    touch-action: none;
+    -webkit-overflow-scrolling: none;
+    overflow: hidden;
+    /* Other browsers */
+    overscroll-behavior: none;
+}

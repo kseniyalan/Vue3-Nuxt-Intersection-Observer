@@ -1,0 +1,110 @@
+
+@import './utilities/utilities';
+@import './utilities/variables';
+
+.v-container {
+  padding: 0 20px !important;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 !important;
+    max-width: 95vw !important;
+  }
+
+  @media screen and (min-width: 1680px) {
+    max-width: 1320px !important;
+  }
+}
+
+.eshop-main{
+  position: relative;
+  flex: 1 0 auto;
+  max-width: 100%;
+}
+
+.eshop-default-layout{
+  .eshop-breadcrumbs{
+    flex-wrap: wrap;
+
+    .v-breadcrumbs-item{
+      font-size: 14px;
+      line-height: 130%;
+      font-weight: 400;
+      letter-spacing: -0.28px;
+    }
+  }
+}
+
+.eshop-cover-layout{
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+
+/*** BUTTONS ***/
+//TODO FIX
+.eshop-btn, a.eshop-btn, a.eshop-btn:visited{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+  text-decoration: none;
+  border-radius: var(--btn-border-radius);
+  transition: color var(--transition), background-color var(--transition), border-color var(--transition);
+
+  &:disabled{
+    pointer-events: none;
+  }
+
+  &.primary{
+    color: #fff;
+    background-color: var(--blue);
+
+    &:hover, &:focus{
+      background-color: var(--hover-green);
+    }
+
+    &:disabled{
+      color: #fff;
+      border-color: transparent;
+      background-color: var(--grey-disabled);
+    }
+  }
+
+  &.secondary{
+    color: var(--blue);
+    background-color: var(--orange);
+
+    &:hover, &:focus{
+      background-color: var(--primary-green);
+    }
+
+    &:disabled{
+      color: #fff;
+      border-color: transparent;
+      background-color: var(--grey-disabled);
+    }
+  }
+
+  /*
+  &.small{
+    height: 32px;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  &.medium{
+    height: 45px;
+    font-size: 16px;
+    padding: 10px 22px;
+  }
+  */
+
+  &.large{
+    height: 56px;
+    padding: 20px 40px;
+  }
+}
