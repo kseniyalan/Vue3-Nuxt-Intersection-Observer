@@ -1,1 +1,1 @@
-# Vue3-Nuxt-IntersectionObserver
+# Vue3-Nuxt-Intersection Observer
