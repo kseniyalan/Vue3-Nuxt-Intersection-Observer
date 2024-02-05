@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div>
+  <div class="app">
     <Header />
     <div class="main">
       <div class="container">

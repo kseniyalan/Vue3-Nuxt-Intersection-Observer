@@ -2,48 +2,24 @@
 @import './utilities/utilities';
 @import './utilities/variables';
 
-.v-container {
-  padding: 0 20px !important;
-
-  @media screen and (min-width: 768px) {
-    padding: 0 !important;
-    max-width: 95vw !important;
-  }
-
-  @media screen and (min-width: 1680px) {
-    max-width: 1320px !important;
-  }
-}
-
-.eshop-main{
-  position: relative;
-  flex: 1 0 auto;
+.app {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
   max-width: 100%;
-}
-
-.eshop-default-layout{
-  .eshop-breadcrumbs{
-    flex-wrap: wrap;
-
-    .v-breadcrumbs-item{
-      font-size: 14px;
-      line-height: 130%;
-      font-weight: 400;
-      letter-spacing: -0.28px;
-    }
-  }
-}
-
-.eshop-cover-layout{
-  width: 100%;
-  height: 100vh;
   min-height: 100vh;
 }
 
+.main{
+  position: relative;
+  flex: 1 0 auto;
+  max-width: 100%;
+  background-color: aquamarine;
+}
 
 /*** BUTTONS ***/
 //TODO FIX
-.eshop-btn, a.eshop-btn, a.eshop-btn:visited{
+.btn, a.btn, a.btn:visited{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,20 +64,6 @@
       background-color: var(--grey-disabled);
     }
   }
-
-  /*
-  &.small{
-    height: 32px;
-    font-size: 14px;
-    padding: 8px 16px;
-  }
-
-  &.medium{
-    height: 45px;
-    font-size: 16px;
-    padding: 10px 22px;
-  }
-  */
 
   &.large{
     height: 56px;
