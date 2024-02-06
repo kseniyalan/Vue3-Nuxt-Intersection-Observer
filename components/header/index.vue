@@ -4,8 +4,8 @@
 
 <template>
     <header class="header-wrapper">
-      <div class="container">
-        Header
+      <div class="container header text-main">
+        Vue 3 Intersection Observer
       </div>
     </header>
 </template>
@@ -20,28 +20,13 @@
 
 .header{
   position: relative;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: var(--header-desktop-height);
-  z-index: 2;
-
-  @include media-breakpoint-up(lg) {
-    display: flex;
-  }
-
-}
-
-.header-mobile{
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: var(--header-mobile-height);
-
-  @include media-breakpoint-up(lg) {
-    display: none;
-  }
+  font-family: "Caveat";
+  font-size: 20px;
+  color: var(--purple);
 }
 
 

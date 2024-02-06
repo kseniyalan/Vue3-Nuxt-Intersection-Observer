@@ -64,9 +64,36 @@
       background-color: var(--grey-disabled);
     }
   }
+}
 
-  &.large{
-    height: 56px;
-    padding: 20px 40px;
+.text-main{
+  font-family: "Caveat";
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 1.2;
+
+  @include media-breakpoint-up(md) {
+    font-size: 36px;
+    line-height: 1.4;
   }
+}
+
+.yellow{
+  color: var(--yellow);
+}
+
+.orange{
+  color: var(--orange);
+}
+
+.purple{
+  color: var(--purple);
+}
+
+.purple-light{
+  color: var(--purple-light);
+}
+
+.greem{
+  color: var(--green);
 }
