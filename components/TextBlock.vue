@@ -3,13 +3,13 @@
 </script>
 
 <template>
-    <div class="col-12 col-md-6  pa-0 py-md-10 mx-auto">
+    <div class="col-12 col-md-6 py-4 text-center py-md-6 mx-auto">
 
-      <div class="my-7 my-md-12">
-        <div class="text-top text-center mb-6 mb-md-10">
+      <div class="">
+        <div class="text-block-top pb-2 pb-md-4 mx-auto">
           <slot name="text-top" />
         </div>
-        <div class="text-main">
+        <div class="text-block-main">
           <slot name="text-main" />
         </div>
       </div>
@@ -18,9 +18,9 @@
 
 <style scoped lang="scss">
 @import '~/assets/styles/utilities/mixins';
-.text-top{
+.text-block-top{
   font-family: "Caveat";
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.2;
   font-weight: 500;
 
@@ -29,8 +29,8 @@
   }
 }
 
-.text-main{
-  font-size: 24px;
+.text-block-main{
+  font-size: 20px;
   line-height: 1.2;
 
     @include media-breakpoint-up(md) {
