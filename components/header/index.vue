@@ -4,7 +4,7 @@
 
 <template>
     <header class="header-wrapper">
-      <div class="container header text-main">
+      <div class="container header site-text-heading">
         Vue 3 Intersection Observer
       </div>
     </header>
@@ -15,7 +15,8 @@
 
 .header-wrapper{
   position: relative;
-  height: var(--header-desktop-height)
+  height: var(--header-desktop-height);
+  box-shadow: 0px 15px 10px -15px var(--light);    
 }
 
 .header{
@@ -24,9 +25,8 @@
   justify-content: center;
   align-items: center;
   height: var(--header-desktop-height);
-  font-family: "Caveat";
-  font-size: 20px;
   color: var(--purple);
+  
 }
 
 
