@@ -28,7 +28,7 @@
 
     <div class="col-12 col-md-6  pa-0 py-md-10 mx-auto">
       <div class="">As the web has matured, the need for this kind of information has grown. Intersection information is needed for many reasons, such as: </div>
-        <ul class="site-text-regular">
+        <ul class="site-ul site-text-regular">
           <li>Lazy-loading of images or other content as a page is scrolled.</li>
           <li>Implementing "infinite scrolling" websites, where more and more content is loaded and rendered as you scroll, so that the user doesn't have to flip through pages.</li>
           <li>Reporting of visibility of advertisements in order to calculate ad revenues.</li>

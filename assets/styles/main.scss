@@ -95,3 +95,33 @@
 .green{
   color: var(--green);
 }
+
+ul.site-ul{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 15px;
+
+  li::marker{
+    color: var(--blue);
+  }
+
+  li:nth-child(1){
+    &::marker{
+      color: var(--orange);
+    }
+  }
+
+  li:nth-child(2){
+    &::marker{
+      color: var(--purple);
+    }
+  }
+
+  li:nth-child(3){
+    &::marker{
+      color: var(--purple-light);
+    }
+  }
+
+}
