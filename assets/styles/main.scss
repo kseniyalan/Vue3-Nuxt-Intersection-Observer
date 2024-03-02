@@ -2,109 +2,126 @@
 @import './utilities/utilities';
 @import './utilities/variables';
 
-.v-container {
-  padding: 0 20px !important;
-
-  @media screen and (min-width: 768px) {
-    padding: 0 !important;
-    max-width: 95vw !important;
-  }
-
-  @media screen and (min-width: 1680px) {
-    max-width: 1320px !important;
-  }
+.app {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  max-width: 100%;
+  min-height: 100vh;
 }
 
-.eshop-main{
+.main{
   position: relative;
   flex: 1 0 auto;
   max-width: 100%;
 }
 
-.eshop-default-layout{
-  .eshop-breadcrumbs{
-    flex-wrap: wrap;
-
-    .v-breadcrumbs-item{
-      font-size: 14px;
-      line-height: 130%;
-      font-weight: 400;
-      letter-spacing: -0.28px;
-    }
-  }
-}
-
-.eshop-cover-layout{
-  width: 100%;
-  height: 100vh;
-  min-height: 100vh;
-}
-
-
-/*** BUTTONS ***/
-//TODO FIX
-.eshop-btn, a.eshop-btn, a.eshop-btn:visited{
+.eshop-icon-btn{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: -0.32px;
-  text-decoration: none;
-  border-radius: var(--btn-border-radius);
-  transition: color var(--transition), background-color var(--transition), border-color var(--transition);
+  width: var(--btn-height);
+  min-width: var(--btn-height);
+  max-width: var(--btn-height);
+  height: var(--btn-height);
+  padding: 16px;
+  background-color: var(--blue);
+  border-radius: 100%;
+  transition: background-color var(--transition);
 
-  &:disabled{
-    pointer-events: none;
-  }
-
-  &.primary{
-    color: #fff;
-    background-color: var(--blue);
-
-    &:hover, &:focus{
-      background-color: var(--hover-green);
-    }
-
-    &:disabled{
-      color: #fff;
-      border-color: transparent;
-      background-color: var(--grey-disabled);
+  svg{
+    path{
+      fill: #fff;
+      transition: fill var(--transition);
     }
   }
+ 
+  &:hover, &:focus{
+    background-color: var(--purple);
 
-  &.secondary{
-    color: var(--blue);
-    background-color: var(--orange);
-
-    &:hover, &:focus{
-      background-color: var(--primary-green);
-    }
-
-    &:disabled{
-      color: #fff;
-      border-color: transparent;
-      background-color: var(--grey-disabled);
+    svg{
+      path{
+        fill: var(--yellow);
+      }
     }
   }
+}
 
-  /*
-  &.small{
-    height: 32px;
-    font-size: 14px;
-    padding: 8px 16px;
+.site-text-heading{
+  font-family: "Caveat";
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 1.3;
+
+  @include media-breakpoint-up(md) {
+    font-size: 36px;
+    line-height: 1.4;
+  }
+}
+
+.site-text-regular{
+  font-weight: 400;
+  line-height: 1.4;
+
+  &.large{
+    font-size: 16px;
   }
 
   &.medium{
-    height: 45px;
-    font-size: 16px;
-    padding: 10px 22px;
+    font-size: 14px;
   }
-  */
+}
 
-  &.large{
-    height: 56px;
-    padding: 20px 40px;
+.yellow{
+  color: var(--yellow);
+}
+
+.orange{
+  color: var(--orange);
+}
+
+.purple{
+  color: var(--purple);
+}
+
+.purple-light{
+  color: var(--purple-light);
+}
+
+.blue{
+  color: var(--blue);
+}
+
+.green{
+  color: var(--green);
+}
+
+ul.site-ul{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 15px;
+
+  li::marker{
+    color: var(--blue);
   }
+
+  li:nth-child(1){
+    &::marker{
+      color: var(--orange);
+    }
+  }
+
+  li:nth-child(2){
+    &::marker{
+      color: var(--purple);
+    }
+  }
+
+  li:nth-child(3){
+    &::marker{
+      color: var(--purple-light);
+    }
+  }
+
 }
