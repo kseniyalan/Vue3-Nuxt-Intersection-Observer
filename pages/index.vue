@@ -1,5 +1,11 @@
 <script setup lang="ts">
+import { onMounted, ref } from 'vue';
 
+const scrollTop = () => {
+  window.scrollTo(0, 0)
+}
+
+/* Animation */
 const sectionRefs = ref<any[]>([]);
 
 onMounted(() => {
@@ -62,7 +68,7 @@ onMounted(() => {
       </div>
 
       <!-- Slide left section -->
-      <div class="col-right col-12 col-md-6 d-flex align-items-start align-items-md-center ps-0 ps-md-2" :ref="el => sectionRefs.push(el)">
+      <div class="col-right col-12 col-md-6 d-flex align-items-start align-items-md-center ps-0 ps-md-2 pt-4 pt-md-0" :ref="el => sectionRefs.push(el)">
         <div class="site-text-regular">
           Implementing intersection detection in the past involved event handlers and loops calling methods like <span class="purple"><i>Element.getBoundingClientRect()</i></span> to build up the needed information for every element affected. Since all this code runs on the main thread, even one of these can cause performance problems. When a site is loaded with these tests, things can get downright ugly.
         </div>
@@ -82,6 +88,17 @@ onMounted(() => {
     <div>
       <div class="fade-in-delay-wrapper col-12 col-md-10 py-4 py-md-6 mx-auto" :ref="el => sectionRefs.push(el)">
         <img src="/dumbier.jpg" class="img-fluid rounded" alt="Mountains" />
+      </div>
+      <div class="d-flex justify-content-center">
+        <button
+          type="button"
+          class="eshop-icon-btn large grey"
+          @click="scrollTop"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 384 512">
+            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+          </svg>
+        </button>
       </div>
     </div>
   </div>
