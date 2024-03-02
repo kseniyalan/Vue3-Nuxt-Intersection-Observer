@@ -1,7 +1,3 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
     <header class="header-wrapper">
       <div class="container header site-text-heading purple">
@@ -13,6 +9,7 @@
 <style scoped lang="scss">
 @import '~/assets/styles/utilities/mixins';
 $header-desktop-height: 100px;
+
 .header-wrapper{
   position: relative;
   width: 100%;

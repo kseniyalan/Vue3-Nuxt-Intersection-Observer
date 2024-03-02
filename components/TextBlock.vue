@@ -1,10 +1,5 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
     <div class="col-12 col-md-6 py-4 text-center py-md-6 mx-auto">
-
       <div class="">
         <div class="text-block-top pb-2 pb-md-4 mx-auto">
           <slot name="text-top" />
@@ -16,7 +11,7 @@
     </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import '~/assets/styles/utilities/mixins';
 .text-block-top{
   font-family: "Caveat";

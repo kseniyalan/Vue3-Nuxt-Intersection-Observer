@@ -1,11 +1,6 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
   <footer>
     <div class="container footer">
-
       2024 &#128521;
     </div>
   </footer>
