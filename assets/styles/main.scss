@@ -37,11 +37,11 @@
   }
  
   &:hover, &:focus{
-    background-color: var(--purple-light);
+    background-color: var(--purple);
 
     svg{
       path{
-        fill: var(--purple);
+        fill: var(--yellow);
       }
     }
   }
