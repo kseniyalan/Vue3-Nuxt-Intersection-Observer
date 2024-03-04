@@ -10,7 +10,10 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/image'
   ],
+  ssr: true,
   app: {
+    baseURL: '/Vue3-Nuxt-Intersection-Observer/',
+    buildAssetsDir: 'assets',
     head: {
       htmlAttrs: {
         lang: 'sk'
