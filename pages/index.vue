@@ -93,6 +93,7 @@ onMounted(() => {
         <button
           type="button"
           class="eshop-icon-btn large grey"
+          aria-label="scroll-top"
           @click="scrollTop"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 384 512">
