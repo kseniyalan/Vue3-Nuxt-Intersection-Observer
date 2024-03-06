@@ -18,3 +18,8 @@ npm run dev
 ```
 npm run build
 ```
+
+### Build for GitHub Pages
+```
+npx nuxt build --preset github_pages
+```
