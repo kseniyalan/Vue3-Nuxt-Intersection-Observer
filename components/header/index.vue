@@ -1,7 +1,7 @@
 <template>
     <header class="header-wrapper">
-      <div class="container header site-text-heading purple">
-        Vue 3 Intersection Observer
+      <div class="container header">
+        <h1 class="site-text-heading purple">Vue 3 Intersection Observer</h1>
       </div>
     </header>
 </template>

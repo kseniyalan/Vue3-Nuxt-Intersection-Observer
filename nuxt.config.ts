@@ -6,7 +6,7 @@ export default defineNuxtConfig({
       apiBase: process.env.API_BASE,
     }
   },
-  css: ['/assets/styles/utilities/variables.scss', '/assets/styles/main.scss'],
+  css: ['/assets/styles/variables/variables.scss', '/assets/styles/main.scss'],
   modules: [
     '@nuxt/image'
   ],
