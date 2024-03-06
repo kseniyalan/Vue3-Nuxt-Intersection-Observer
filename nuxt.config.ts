@@ -6,7 +6,7 @@ export default defineNuxtConfig({
       apiBase: process.env.API_BASE,
     }
   },
-  css: ['/assets/styles/utilities/variables.scss', '/assets/styles/main.scss'],
+  css: ['/assets/styles/variables/variables.scss', '/assets/styles/main.scss'],
   modules: [
     '@nuxt/image'
   ],
@@ -16,10 +16,21 @@ export default defineNuxtConfig({
     //buildAssetsDir: 'assets',
     head: {
       htmlAttrs: {
-        lang: 'sk'
+        lang: 'en'
       },
       titleTemplate: '%s | Vue3Nuxt',
       title: 'Vue3Nuxt',
     }
+  },
+  image: {
+    presets: {
+      default: {
+        modifiers: {
+          format: 'webp',
+          loading: 'lazy',
+          quality: '100',
+        },
+      }
+    },
   }
 })
