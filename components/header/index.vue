@@ -37,6 +37,4 @@ $header-mobile-height: 70px;
     height: $header-desktop-height;
   }
 }
-
-
 </style>
