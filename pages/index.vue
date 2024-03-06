@@ -49,7 +49,7 @@ onMounted(() => {
     </div>
 
     <div class="col-12 col-md-10 py-4 py-md-6 mx-auto">
-      <img src="/flower1.jpg" class="img-fluid rounded" alt="Pink flower" />
+      <NuxtImg src="/flower1.jpg" class="img-fluid rounded" alt="Pink flower" />
     </div>
 
     <div class="fade-in-delay-wrapper" :ref="el => sectionRefs.push(el)">
@@ -64,7 +64,7 @@ onMounted(() => {
     <div class="col-12 col-md-10 d-flex flex-column flex-md-row py-4 py-md-6 mx-auto">
       <!-- Slide right section -->
       <div class="col-left col-12 col-md-6 pe-0 pe-md-2 pb-4 pb-md-0" :ref="el => sectionRefs.push(el)">
-        <img src="/flower2.jpg" class="img-fluid rounded" alt="Purple flower" />
+        <NuxtImg src="/flower2.jpg" class="img-fluid rounded" alt="Purple flower" />
       </div>
 
       <!-- Slide left section -->
@@ -87,7 +87,7 @@ onMounted(() => {
 
     <div>
       <div class="fade-in-delay-wrapper col-12 col-md-10 py-4 py-md-6 mx-auto" :ref="el => sectionRefs.push(el)">
-        <img src="/dumbier.jpg" class="img-fluid rounded" alt="Mountains" />
+        <NuxtImg src="/dumbier.jpg" class="img-fluid rounded" alt="Mountains" />
       </div>
       <div class="d-flex justify-content-center">
         <button

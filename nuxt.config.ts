@@ -16,10 +16,21 @@ export default defineNuxtConfig({
     //buildAssetsDir: 'assets',
     head: {
       htmlAttrs: {
-        lang: 'sk'
+        lang: 'en'
       },
       titleTemplate: '%s | Vue3Nuxt',
       title: 'Vue3Nuxt',
     }
+  },
+  image: {
+    presets: {
+      default: {
+        modifiers: {
+          format: 'webp',
+          loading: 'lazy',
+          quality: '100',
+        },
+      }
+    },
   }
 })
