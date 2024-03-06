@@ -9,11 +9,12 @@
 <style scoped lang="scss">
 @import '~/assets/styles/utilities/mixins';
 $header-desktop-height: 100px;
+$header-mobile-height: 70px;
 
 .header-wrapper{
   position: relative;
   width: 100%;
-  height: $header-desktop-height;
+  height: $header-mobile-height;
   background-color: #fff;
   box-shadow: 0px 15px 10px -15px var(--light);
   z-index: 100;
@@ -21,6 +22,7 @@ $header-desktop-height: 100px;
   @include media-breakpoint-up(md) {
     position: sticky;
     top: 0;
+    height: $header-desktop-height;
   }
 }
 
@@ -29,7 +31,11 @@ $header-desktop-height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: $header-desktop-height;
+  height: $header-mobile-height;
+
+  @include media-breakpoint-up(md) {
+    height: $header-desktop-height;
+  }
 }
 
 
