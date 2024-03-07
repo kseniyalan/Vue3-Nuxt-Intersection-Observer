@@ -49,7 +49,16 @@ onMounted(() => {
     </div>
 
     <div class="col-12 col-md-10 py-4 py-md-6 mx-auto">
-      <NuxtImg src="/flower1.jpg" class="img-fluid rounded" alt="Pink flower" />
+      <NuxtImg
+        src="/flower1.jpg"
+        class="img-fluid rounded"
+        alt="Pink flower"
+        loading="lazy"
+        format="webp"
+        quality="80"
+        fit="cover"
+        sizes='xs:353px sm:353px md:574px lg:774px xl:924px xxl:1074'
+      />
     </div>
 
     <div class="fade-in-delay-wrapper" :ref="el => sectionRefs.push(el)">
@@ -61,14 +70,23 @@ onMounted(() => {
       </TextBlock>
     </div>
 
-    <div class="col-12 col-md-10 d-flex flex-column flex-md-row py-4 py-md-6 mx-auto">
+    <div class="col-12 col-md-10 d-flex flex-column flex-lg-row py-4 py-md-6 mx-auto">
       <!-- Slide right section -->
-      <div class="col-left col-12 col-md-6 pe-0 pe-md-2 pb-4 pb-md-0" :ref="el => sectionRefs.push(el)">
-        <NuxtImg src="/flower2.jpg" class="img-fluid rounded" alt="Purple flower" />
+      <div class="col-left col-12 col-lg-6 d-flex align-items-start align-items-lg-center pe-0 pe-lg-2 pb-4 pb-lg-0" :ref="el => sectionRefs.push(el)">
+        <NuxtImg
+          src="/flower2.jpg"
+          class="img-fluid rounded"
+          alt="Purple flower"
+          loading="lazy"
+          format="webp"
+          quality="80"
+          fit="cover"
+          sizes='xs:353px sm:353px md:574px lg:574px xl:574px xxl:774'
+        />
       </div>
 
       <!-- Slide left section -->
-      <div class="col-right col-12 col-md-6 d-flex align-items-start align-items-md-center ps-0 ps-md-2 pt-4 pt-md-0" :ref="el => sectionRefs.push(el)">
+      <div class="col-right col-12 col-lg-6 d-flex align-items-start align-items-lg-center ps-0 ps-lg-2 pt-4 pt-lg-0" :ref="el => sectionRefs.push(el)">
         <div class="site-text-regular large">
           Implementing intersection detection in the past involved event handlers and loops calling methods like <span class="purple"><i>Element.getBoundingClientRect()</i></span> to build up the needed information for every element affected. Since all this code runs on the main thread, even one of these can cause performance problems. When a site is loaded with these tests, things can get downright ugly.
         </div>
@@ -79,7 +97,7 @@ onMounted(() => {
       <div class="site-text-regular large mb-2 mb-md-4">As the web has matured, the need for this kind of information has grown. Intersection information is needed for many reasons, such as: </div>
         <ul class="site-text-regular medium site-ul">
           <li>Lazy-loading of images or other content as a page is scrolled.</li>
-          <li>Implementing <span class="green">"infinite scrolling"</span> websites, where more and more content is loaded and rendered as you scroll, so that the user doesn't have to flip through pages.</li>
+          <li>Implementing <span class="orange">"infinite scrolling"</span> websites, where more and more content is loaded and rendered as you scroll, so that the user doesn't have to flip through pages.</li>
           <li>Reporting of visibility of advertisements in order to calculate ad revenues.</li>
           <li>Deciding whether or not to perform tasks or animation processes based on whether or not the user will see the result.</li>
         </ul> 
@@ -87,7 +105,16 @@ onMounted(() => {
 
     <div>
       <div class="fade-in-delay-wrapper col-12 col-md-10 py-4 py-md-6 mx-auto" :ref="el => sectionRefs.push(el)">
-        <NuxtImg src="/dumbier.jpg" class="img-fluid rounded" alt="Mountains" />
+        <NuxtImg
+          src="/dumbier.jpg"
+          class="img-fluid rounded"
+          alt="Mountains"
+          loading="lazy"
+          format="webp"
+          quality="80"
+          fit="cover"
+          sizes='xs:353px sm:353px md:574px lg:774px xl:924px xxl:1074'
+        />
       </div>
       <div class="d-flex justify-content-center">
         <button

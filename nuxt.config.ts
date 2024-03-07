@@ -28,9 +28,17 @@ export default defineNuxtConfig({
         modifiers: {
           format: 'webp',
           loading: 'lazy',
-          quality: '100',
+          quality: '80',
         },
       }
+    },
+    screens: {
+      xs: 320,
+      sm: 576,
+      md: 768,
+      lg: 992,
+      xl: 1200,
+      xxl: 1400
     },
   }
 })
