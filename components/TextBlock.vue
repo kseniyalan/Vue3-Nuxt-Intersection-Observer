@@ -1,5 +1,5 @@
 <template>
-    <div class="col-12 col-md-6 py-4 text-center py-md-6 mx-auto">
+    <div class="col-12 col-md-8 col-xl-6 py-4 text-center py-md-6 mx-auto">
       <div class="">
         <div class="text-block-top pb-2 pb-md-4 mx-auto">
           <slot name="text-top" />
@@ -19,7 +19,7 @@
   line-height: 1.2;
   font-weight: 500;
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     font-size: 28px;
   }
 }
@@ -29,6 +29,11 @@
   line-height: 1.2;
 
     @include media-breakpoint-up(md) {
+      font-size: 24px;
+      line-height: 1.4;
+    }
+
+    @include media-breakpoint-up(lg) {
       font-size: 30px;
       line-height: 1.4;
     }
